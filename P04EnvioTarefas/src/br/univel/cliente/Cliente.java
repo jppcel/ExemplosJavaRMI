@@ -25,6 +25,11 @@ public class Cliente {
 			String retorno = servico.executar(ts);
 			System.out.println("Retorno do servidor: " + retorno);
 			
+			TarPar tarefaComParametros = new TarPar(2, 2);
+			Integer retInt = servico.executar(tarefaComParametros);
+			
+			
+			
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		} catch (NotBoundException e) {
